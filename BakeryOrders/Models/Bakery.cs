@@ -19,5 +19,26 @@ namespace Bakery.Models
             Orders = new List<Order>{};
             _count++;
         }
+
+        public static List<Vendor> GetAll()
+        {
+            return _instances;
+        }
+
+        public static void ClearAll()
+        {
+            _instances.Clear();
+        }
+
+        public static Vendor Find(int id)
+        {
+            int index = _instances.FindIndex(vendor => vendor.Id == id);
+            return _instances(index);
+        }
+
+        public void AddVendor(Vendor vendor)
+        {
+            Orders.Add(vendor);
+        }
     }
 }
