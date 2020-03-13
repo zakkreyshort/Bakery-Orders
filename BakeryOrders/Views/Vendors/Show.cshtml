@@ -1,0 +1,16 @@
+@{
+    Layout = "_Layout";
+}
+
+@using Bakery.Models;
+
+<h3>Here are all the orders for @Model["vendor"].Name : </h3>
+
+<ul>
+    @foreach (Order order in @Model["vendor"])
+    {
+        <li><a href='/vendors/@Model["vendor"].Id/order/@order.Id'>@album.Name</a></li>
+    }
+</ul>
+
+<p><a href='/vendors/@Model["vendor"].Id/order/new'>Add a new order</a></p>
