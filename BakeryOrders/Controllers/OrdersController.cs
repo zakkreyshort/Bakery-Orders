@@ -10,7 +10,7 @@ namespace Bakery.Controllers
     [HttpGet("/vendors/{vendorId}/orders/new")]
     public ActionResult New(int id)
     {
-      vendor vendor = vendor.Find(id);
+      Vendor vendor = vendor.Find(id);
       return View(vendor);
     }
 
@@ -28,9 +28,9 @@ namespace Bakery.Controllers
     [HttpPost("/vendors/{vendorId}/orders/{orderId}")]
     public ActionResult Delete(int orderID)
     {
-      List<Order> order = Order.GetAll();
-      int indexToDelete = order.FindIndex(order => order.Id == orderID);
-      order.RemoveAt(indexToDelete);
+      List<Order> orders = Order.GetAll();
+      int indexToDelete = orders.FindIndex(order => order.Id == orderID);
+      orders.RemoveAt(indexToDelete);
       return RedirectToAction("Show", "Vendor");
     }
   }

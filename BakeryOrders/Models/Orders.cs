@@ -37,10 +37,8 @@ namespace Bakery.Models
 
         public static Order Find(int id)
         {
-            int inex = _instances.FindIndex(order => order.Id == id);
+            int index = _instances.FindIndex(order => order.Id == id);
             return _instances[index];
-        }
-
-        
+        } 
     }
 }
