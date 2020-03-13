@@ -33,7 +33,7 @@ namespace Bakery.Models
         public static Vendor Find(int id)
         {
             int index = _instances.FindIndex(vendor => vendor.Id == id);
-            return _instances(index);
+            return _instances[index];
         }
 
         public void AddVendor(Vendor vendor)
