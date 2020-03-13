@@ -5,7 +5,7 @@ using System;
 
 namespace Bakery.Controllers
 {
-  public class OrderController : Controller
+  public class OrdersController : Controller
   {
     [HttpGet("/vendors/{vendorId}/orders/new")]
     public ActionResult New(int id)
