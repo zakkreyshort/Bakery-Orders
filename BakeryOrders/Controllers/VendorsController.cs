@@ -25,7 +25,7 @@ namespace Bakery.Controllers
         {
             Dictionary<string, object> model = new Dictionary<string, object>();
             Vendor selectedVendor = Vendor.Find(id);
-            List<Order> vendorOrders = selectedVendor.Order;
+            List<Order> vendorOrders = selectedVendor.Orders;
             model.Add("vendor", selectedVendor);
             model.Add("orders", vendorOrders);
             return View(model);
@@ -37,8 +37,8 @@ namespace Bakery.Controllers
             Dictionary<string, object> model = new Dictionary<string, object>();
             Vendor selectedVendor = Vendor.Find(vendorId);
             Order newOrder = new Order(name, description, price, date);
-            selectedVendor.AddVendor(newOrder);
-            List<Order> venderOrders = selectedVendor.Order;
+            selectedVendor.AddOrder(newOrder);
+            List<Order> venderOrders = selectedVendor.Orders;
             model.Add("orders", venderOrders);
             model.Add("vendor", selectedVendor);
             return View("Show", model);

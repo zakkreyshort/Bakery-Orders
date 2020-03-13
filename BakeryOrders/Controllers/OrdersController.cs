@@ -10,7 +10,7 @@ namespace Bakery.Controllers
     [HttpGet("/vendors/{vendorId}/orders/new")]
     public ActionResult New(int id)
     {
-      Vendor vendor = vendor.Find(id);
+      Vendor vendor = Vendor.Find(id);
       return View(vendor);
     }
 
