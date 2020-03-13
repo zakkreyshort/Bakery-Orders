@@ -1,0 +1,6 @@
+/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/BakeryOrders/obj/Debug/netcoreapp2.2/BakeryOrders.csprojAssemblyReference.cache
+/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/BakeryOrders/obj/Debug/netcoreapp2.2/BakeryOrders.csproj.CoreCompileInputs.cache
+/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/BakeryOrders/obj/Debug/netcoreapp2.2/BakeryOrders.RazorAssemblyInfo.cache
+/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/BakeryOrders/obj/Debug/netcoreapp2.2/BakeryOrders.RazorAssemblyInfo.cs
+/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/BakeryOrders/obj/Debug/netcoreapp2.2/BakeryOrders.AssemblyInfoInputs.cache
+/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/BakeryOrders/obj/Debug/netcoreapp2.2/BakeryOrders.AssemblyInfo.cs

@@ -7,14 +7,14 @@ namespace Bakery.Controllers
 {
   public class OrderController : Controller
   {
-    [HttpGet("/vendor/{vendorId}/order/new")]
+    [HttpGet("/vendors/{vendorId}/orders/new")]
     public ActionResult New(int id)
     {
       vendor vendor = vendor.Find(id);
       return View(vendor);
     }
 
-    [HttpGet("/vendor/{vendorId}/order/{orderId}")]
+    [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
     public ActionResult Show(int vendorID, int orderID)
     {
       Order order = Order.Find(orderID);
@@ -25,7 +25,7 @@ namespace Bakery.Controllers
       return View(model);
     }
 
-    [HttpPost("/vendor/{vendorId}/order/{orderId}")]
+    [HttpPost("/vendors/{vendorId}/orders/{orderId}")]
     public ActionResult Delete(int orderID)
     {
       List<Order> order = Order.GetAll();

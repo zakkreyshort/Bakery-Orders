@@ -9,7 +9,6 @@ namespace Bakery.Models
         public string Description { get; set; }
         public int Price { get; set; }
         public int Date { get; set ;}
-        // maybe add payment verification?
         public int Id { get; }
         private static int _count = 0;
 
@@ -41,5 +40,7 @@ namespace Bakery.Models
             int inex = _instances.FindIndex(order => order.Id == id);
             return _instances[index];
         }
+
+        
     }
 }

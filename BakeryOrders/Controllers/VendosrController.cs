@@ -7,20 +7,20 @@ namespace Bakery.Controllers
 {
     public class VendorController : Controller
     {
-        [HttpGet("/vendor")]
+        [HttpGet("/vendors")]
         public ActionResult Index()
         {
             List<Vendor> allVendors = Vendor.GetAll();
             return View(allVendors);
         }
 
-        [HttpGet("/vendor/new")]
+        [HttpGet("/vendors/new")]
         public ActionResult New()
         {
             return View();
         }
 
-        [HttpPost("/vendor")]
+        [HttpPost("/vendors")]
         public ActionResult Show(int id)
         {
             Dictionary<string, object> model = new Dictionary<string, object>();
@@ -31,7 +31,7 @@ namespace Bakery.Controllers
             return View(model);
         }
 
-        [HttpPost("/vendor/{id}/order")]
+        [HttpPost("/vendors/{id}/order")]
         public ActionResult Create(int vendorId, string name, string description, int price, int date)
         {
             Dictionary<string, object> model = new Dictionary<string, object>();
