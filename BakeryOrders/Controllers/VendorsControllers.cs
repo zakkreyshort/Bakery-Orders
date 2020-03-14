@@ -27,7 +27,7 @@ namespace Bakery.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpPost("/vendors/{id}")]
+        [HttpGet("/vendors/{id}")]
         public ActionResult Show(int id)
         {
             Dictionary<string, object> model = new Dictionary<string, object>();
@@ -38,7 +38,7 @@ namespace Bakery.Controllers
             return View(model);
         }
 
-        [HttpPost("/vendors/{id}/order")]
+        [HttpPost("/vendors/{id}/orders")]
         public ActionResult Create(int vendorId, string name, string description, int price, int date)
         {
             Dictionary<string, object> model = new Dictionary<string, object>();
@@ -46,7 +46,7 @@ namespace Bakery.Controllers
             Order newOrder = new Order(name, description, price, date);
             selectedVendor.AddOrder(newOrder);
             List<Order> venderOrders = selectedVendor.Orders;
-            model.Add("orders", venderOrders);
+            model.Add("order", venderOrders);
             model.Add("vendor", selectedVendor);
             return View("Show", model);
         }

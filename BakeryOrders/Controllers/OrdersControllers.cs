@@ -26,12 +26,12 @@ namespace Bakery.Controllers
     }
 
     [HttpPost("/vendors/{vendorId}/orders/{orderId}")]
-    public ActionResult Delete(int orderID)
+    public ActionResult Delete(int ordererID)
     {
       List<Order> orders = Order.GetAll();
-      int indexToDelete = orders.FindIndex(order => order.Id == orderID);
+      int indexToDelete = orders.FindIndex(orderer => orderer.Id == ordererID);
       orders.RemoveAt(indexToDelete);
-      return RedirectToAction("Show", "Vendor");
+      return RedirectToAction("Show", "Vendors");
     }
   }
 }
