@@ -5,7 +5,7 @@ using Bakery.Models;
 
 namespace Bakery.Controllers
 {
-    public class VendorController : Controller
+    public class VendorsController : Controller
     {
         [HttpGet("/vendors")]
         public ActionResult Index()
@@ -27,7 +27,7 @@ namespace Bakery.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpPost("/vendors")]
+        [HttpPost("/vendors/{id}")]
         public ActionResult Show(int id)
         {
             Dictionary<string, object> model = new Dictionary<string, object>();
