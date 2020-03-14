@@ -21,17 +21,17 @@ namespace Bakery.Controllers
       Vendor vendor = Vendor.Find(vendorID);
       Dictionary <string, object> model = new Dictionary<string, object>();
       model.Add("order", order);
-      model.Add("vendor", vendor);
+      model.Add("vendors", vendor);
       return View(model);
     }
 
     [HttpPost("/vendors/{vendorId}/orders/{orderId}")]
-    public ActionResult Delete(int ordererID)
+    public ActionResult Delete(int orderID)
     {
-      List<Order> orders = Order.GetAll();
-      int indexToDelete = orders.FindIndex(orderer => orderer.Id == ordererID);
-      orders.RemoveAt(indexToDelete);
-      return RedirectToAction("Show", "Vendors");
+      List<Order> ordersz = Order.GetAll();
+      int indexToDelete = ordersz.FindIndex(order => order.Id == orderID);
+      ordersz.RemoveAt(indexToDelete);
+      return RedirectToAction("Show", "Vendor");
     }
   }
 }

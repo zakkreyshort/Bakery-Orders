@@ -5,7 +5,7 @@ using Bakery.Models;
 
 namespace Bakery.Controllers
 {
-    public class VendorsController : Controller
+    public class VendorController : Controller
     {
         [HttpGet("/vendors")]
         public ActionResult Index()
@@ -46,7 +46,7 @@ namespace Bakery.Controllers
             Order newOrder = new Order(name, description, price, date);
             selectedVendor.AddOrder(newOrder);
             List<Order> venderOrders = selectedVendor.Orders;
-            model.Add("order", venderOrders);
+            model.Add("orders", venderOrders);
             model.Add("vendor", selectedVendor);
             return View("Show", model);
         }
