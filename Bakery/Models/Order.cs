@@ -30,10 +30,6 @@ namespace Bakery.Models
             return _orders;
         }
 
-        public static void ClearAll()
-        {
-            _orders.Clear();
-        }
 
         public static Order Find(int id)
         {
