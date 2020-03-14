@@ -12077,9 +12077,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/Bakery/BakeryOrders.csproj",
-      "projectName": "BakeryOrders",
-      "projectPath": "/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/Bakery/BakeryOrders.csproj",
+      "projectUniqueName": "/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/Bakery/Bakery.csproj",
+      "projectName": "Bakery",
+      "projectPath": "/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/Bakery/Bakery.csproj",
       "packagesPath": "/Users/zakkreyshort/.nuget/packages/",
       "outputPath": "/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/Bakery/obj/",
       "projectStyle": "PackageReference",
