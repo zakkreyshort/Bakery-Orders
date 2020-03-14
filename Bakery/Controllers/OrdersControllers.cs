@@ -31,9 +31,9 @@ namespace Bakery.Controllers
       List<Vendor> vendors = Vendor.GetAll();
       int vendorIndexToDelete = vendors[vendorID].Orders.FindIndex(order => order.Id == orderID);
       List<Order> orders = Order.GetAll();
-      int indexToDelete = orders.FindIndex(order => order.Id == orderID);
+      int orderIndexToDelete = orders.FindIndex(order => order.Id == orderID);
       vendors[vendorID].Orders.RemoveAt(vendorIndexToDelete);
-      orders.RemoveAt(indexToDelete);
+      orders.RemoveAt(orderIndexToDelete);
       return RedirectToAction($"Show({vendorID})", "Vendor");
     }
   }

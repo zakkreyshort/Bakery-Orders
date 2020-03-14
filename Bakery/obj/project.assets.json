@@ -12077,11 +12077,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/Bakery/Bakery.csproj",
+      "projectUniqueName": "/Users/zakkreyshort/Desktop/Bakery.Solution/Bakery/Bakery.csproj",
       "projectName": "Bakery",
-      "projectPath": "/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/Bakery/Bakery.csproj",
+      "projectPath": "/Users/zakkreyshort/Desktop/Bakery.Solution/Bakery/Bakery.csproj",
       "packagesPath": "/Users/zakkreyshort/.nuget/packages/",
-      "outputPath": "/Users/zakkreyshort/Desktop/Bakery-Orders.Solution/Bakery/obj/",
+      "outputPath": "/Users/zakkreyshort/Desktop/Bakery.Solution/Bakery/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

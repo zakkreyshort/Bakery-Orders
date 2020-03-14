@@ -15,9 +15,8 @@ namespace Bakery.Models
         {
             Name = name;
             _vendors.Add(this);
-            Id = _count;
+            Id = _count++;
             Orders = new List<Order>{};
-            _count++;
         }
 
         public static List<Vendor> GetAll()
@@ -25,10 +24,6 @@ namespace Bakery.Models
             return _vendors;
         }
 
-        public static void ClearAll()
-        {
-            _vendors.Clear();
-        }
 
         public static Vendor Find(int id)
         {
