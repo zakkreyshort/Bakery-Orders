@@ -7,17 +7,16 @@
 
 ## Description
 
-_This project is a console application written in C#/.NET that acts as a pastry shop and returns an amount based off of bread or pastry ordered._
+_This project allows a user to keep track of vendors and their information for a bakery. The ideal application would be in a POS setting for management usage._
 
 ## Specifications:
 
 
-| Specification | Example Input | Example Output |
-| ------------- |:-------------:| --------------:|
-| Console asks for decision | n/a |  [pastry] |
-| User enters a decision | [bread] | _asks question_|
-| Console asks for quantity wanted | 3 | back to main |
-| User chooses to either buy more or checkout | [checkout] | Console displays "Your total is: $ |
+User can use the application to:
+* _Create list of vendors_
+* _Add details to vendor_
+* _Create an order within a vendor along with its details_
+* _Be able to navigate through all pages, add, view, home, etc._
 
 
 ## Setup/Installation Requirements
@@ -26,17 +25,18 @@ _This project is a console application written in C#/.NET that acts as a pastry 
 * _Once the project directory is cloned to your desktop, navigate to the directory in the terminal by entering "cd" followed by the name of this repository in the Terminal._
 * _Confirm that you have navigated to the project directory by entering "pwd" in the Terminal._
 * _Once you have navigated to the directory in the terminal, open the contents of the directory in a text editor or IDE of your choice (e.g., to open the contents of the directory in Visual Studio Code, enter the command "code ." in the Terminal)._
-* _Open the terminal within and run the command "dotnet run" to build the application and then start within the console._
+* _Open the terminal within and run the command "dotnet restore", then "dotnet run" to build the application and then start within the console._
 * _Follow commands within the console and enjoy!_
 
 
 
+
 ## Bugs
-_Have not created a separate checkout form inside the order class, or create other types of pastries/rolls. Does display totals._
+_No known bugs at this time._
 
 ## Technologies Used
 
-_Git, VSCode, C#/.NET_
+_Git, VSCode, C#/.NET, ASP.NET Core 2.2 MVC_
 
 ### License
 
