@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/zakkreyshort/Desktop/Bakery.Solution/Bakery/Bakery.csproj",
+  "FilePath": "/Users/zakkreyshort/Desktop/Bakery-Orders/Bakery/Bakery.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,38 +2961,38 @@
   "RootNamespace": "Bakery",
   "Documents": [
     {
-      "FilePath": "/Users/zakkreyshort/Desktop/Bakery.Solution/Bakery/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/zakkreyshort/Desktop/Bakery.Solution/Bakery/Views/Vendors/Index.cshtml",
-      "TargetPath": "Views\\Vendors\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/zakkreyshort/Desktop/Bakery.Solution/Bakery/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/zakkreyshort/Desktop/Bakery.Solution/Bakery/Views/Orders/New.cshtml",
-      "TargetPath": "Views\\Orders\\New.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/zakkreyshort/Desktop/Bakery.Solution/Bakery/Views/Vendors/Show.cshtml",
-      "TargetPath": "Views\\Vendors\\Show.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/zakkreyshort/Desktop/Bakery.Solution/Bakery/Views/Vendors/New.cshtml",
+      "FilePath": "/Users/zakkreyshort/Desktop/Bakery-Orders/Bakery/Views/Vendors/New.cshtml",
       "TargetPath": "Views\\Vendors\\New.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/zakkreyshort/Desktop/Bakery.Solution/Bakery/Views/Orders/Show.cshtml",
+      "FilePath": "/Users/zakkreyshort/Desktop/Bakery-Orders/Bakery/Views/Orders/New.cshtml",
+      "TargetPath": "Views\\Orders\\New.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/zakkreyshort/Desktop/Bakery-Orders/Bakery/Views/Vendors/Show.cshtml",
+      "TargetPath": "Views\\Vendors\\Show.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/zakkreyshort/Desktop/Bakery-Orders/Bakery/Views/Vendors/Index.cshtml",
+      "TargetPath": "Views\\Vendors\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/zakkreyshort/Desktop/Bakery-Orders/Bakery/Views/Orders/Show.cshtml",
       "TargetPath": "Views\\Orders\\Show.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/zakkreyshort/Desktop/Bakery-Orders/Bakery/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/zakkreyshort/Desktop/Bakery-Orders/Bakery/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
