@@ -10,7 +10,7 @@ namespace Bakery.Models
         public int Price { get; set; }
         public int Date { get; set ;}
         public int Id { get; }
-        private static int _count = 0;
+        private static int _count = 1;
 
         private static List<Order> _orders = new List<Order> {};
 
